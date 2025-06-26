@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fefdfb;
+  padding: 0;
+  margin: 0;
+  color: #333;
+}
+
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+main {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.main-article img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.main-article-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.main-article-content h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+}
+
+.main-article-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+}
+
+.read-more {
+  background: #f15e50;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sidebar {
+  background: #00001a;
+  padding: 1.5rem;
+  color: white;
+  border-radius: 4px;
+}
+
+.sidebar h2 {
+  color: #f0b84d;
+  margin-bottom: 1rem;
+}
+
+.sidebar article h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.sidebar article p {
+  color: #aaa;
+  font-size: 0.875rem;
+}
+
+.sidebar hr {
+  border: 0.5px solid #333;
+  margin: 1rem 0;
+}
+
+.bottom-articles {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.bottom-articles article {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.bottom-articles article img {
+  width: 80px;
+  border-radius: 4px;
+}
+
+.bottom-articles span {
+  color:#f15e50;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.bottom-articles h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #000;
+}
+
+.bottom-articles p {
+  margin: 0.2rem 0 0;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .bottom-articles {
+    flex-direction: column;
+  }
+}
